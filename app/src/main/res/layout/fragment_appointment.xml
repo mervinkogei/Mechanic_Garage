@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/appointment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/defaultMarginSmall"
+        android:gravity="center_horizontal"
+        android:text="@string/garage_appointment_title_text"
+        android:textSize="@dimen/spinner_text_size" />
+
+    <RelativeLayout
+        android:id="@+id/required_service_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appointment_title"
+        android:layout_marginTop="@dimen/defaultMarginSmall"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/defaultPadding">
+
+        <TextView
+            android:id="@+id/checkbox_group_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:gravity="left"
+            android:text="@string/service_type_text"
+            android:textSize="@dimen/actionBarTextSize" />
+
+        <LinearLayout
+            android:id="@+id/checkbox_group_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkbox_group_title"
+            android:orientation="vertical"
+            android:padding="@dimen/defaultPadding">
+
+            <CheckBox
+                android:id="@+id/required_service_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/required_service_small_text" />
+
+            <CheckBox
+                android:id="@+id/required_service_big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/required_service_big_text" />
+
+            <CheckBox
+                android:id="@+id/required_service_tyres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/required_service_tyres_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_group_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkbox_group_title"
+            android:layout_marginLeft="@dimen/defaultMarginSmall"
+            android:layout_toRightOf="@id/checkbox_group_left"
+            android:orientation="vertical"
+            android:padding="@dimen/defaultPadding">
+
+            <CheckBox
+                android:id="@+id/required_service_brakes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/required_service_brakes_text" />
+
+
+            <CheckBox
+                android:id="@+id/required_service_diagnostics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/required_service_diagnostics_text" />
+
+            <CheckBox
+                android:id="@+id/required_service_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/required_service_other_text" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/extra_note_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/required_service_group"
+        android:layout_marginLeft="@dimen/defaultMarginSmall"
+        android:layout_marginRight="@dimen/defaultMarginSmall"
+        android:layout_marginTop="@dimen/defaultMarginSmall"
+        android:hint="@string/extra_note_input_hint"
+        android:lines="4" />
+
+    <Spinner
+        android:id="@+id/appointment_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/extra_note_input"
+        android:layout_marginLeft="@dimen/defaultMarginSmall"
+        android:layout_marginRight="@dimen/defaultMarginSmall"
+        android:layout_marginTop="@dimen/defaultMarginSmall"/>
+
+    <Button
+        android:id="@+id/submit_service_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/defaultMarginSmall"
+        android:text="@string/submit_service_request_text" />
+
+</RelativeLayout>

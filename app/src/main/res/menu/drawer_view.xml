@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_register_login"
+            android:icon="@drawable/ic_register"
+            android:title="Register" />
+        <item
+            android:id="@+id/nav_set_appointment"
+            android:icon="@drawable/ic_appointment_icon"
+            android:title="Make Appointment" />
+        <item
+            android:id="@+id/nav_car_details"
+            android:icon="@drawable/ic_car_details_icon"
+            android:title="Car Details" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_info"
+            android:title="Profile Info" />
+    </group>
+</menu>

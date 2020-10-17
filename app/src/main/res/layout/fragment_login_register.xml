@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/defaultMarginSmall">
+
+        <EditText
+            android:id="@+id/email_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/defaultMarginSmall"
+            android:layout_marginRight="@dimen/defaultMarginSmall"
+            android:layout_marginTop="@dimen/defaultMarginSmall"
+            android:hint="@string/email_input_hint"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/password_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/defaultMarginSmall"
+            android:layout_marginRight="@dimen/defaultMarginSmall"
+            android:layout_marginTop="@dimen/defaultMarginSmall"
+            android:hint="@string/password_input_hint"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <EditText
+        android:id="@+id/password_reinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/defaultMarginSmall"
+        android:layout_marginRight="@dimen/defaultMarginSmall"
+        android:layout_marginTop="@dimen/defaultMarginSmall"
+        android:hint="@string/password_reinput_hint"
+        android:inputType="textPassword"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/defaultMarginSmall"
+        android:layout_marginRight="@dimen/defaultMarginSmall"
+        android:layout_marginTop="@dimen/defaultMarginSmall"
+        android:hint="@string/name_input_hint"
+        android:inputType="textPersonName"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/phone_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/defaultMarginSmall"
+        android:layout_marginRight="@dimen/defaultMarginSmall"
+        android:layout_marginTop="@dimen/defaultMarginSmall"
+        android:hint="@string/phone_input_hint"
+        android:inputType="phone"
+        android:visibility="gone" />
+
+
+    <Button
+        android:id="@+id/submit_login_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/defaultMarginSmall"
+        android:layout_marginRight="@dimen/defaultMarginSmall"
+        android:layout_marginTop="@dimen/defaultMarginSmall"
+        android:text="@string/login_submit_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/login_between_buttons_text" />
+
+    <Button
+        android:id="@+id/toogle_register_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/defaultMarginSmall"
+        android:layout_marginLeft="@dimen/defaultMarginSmall"
+        android:layout_marginRight="@dimen/defaultMarginSmall"
+        tools:text="Toggle" />
+
+</LinearLayout>

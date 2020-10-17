@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "22043522712",
+    "firebase_url": "https://mechanic-garage-1a839.firebaseio.com",
+    "project_id": "mechanic-garage-1a839",
+    "storage_bucket": "mechanic-garage-1a839.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22043522712:android:b0341c112251e50a5402ed",
+        "android_client_info": {
+          "package_name": "com.example.mechanicgarage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "22043522712-05rvqks29r3uoijqhjmv29fkuhl66ljr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgL0g2cYqXqDDGhBLJzNajuDIjK6xNsJs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "22043522712-05rvqks29r3uoijqhjmv29fkuhl66ljr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

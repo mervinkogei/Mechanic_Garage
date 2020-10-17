@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="defaultMargin">15dp</dimen>
+    <dimen name="actionBarTextSize">17sp</dimen>
+    <dimen name="defaultMarginSmall">10dp</dimen>
+    <dimen name="defaultPadding">7dp</dimen>
+    <dimen name="spinner_text_size">19sp</dimen>
+</resources>
