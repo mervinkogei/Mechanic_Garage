@@ -9,10 +9,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/defaultMarginSmall"
         android:gravity="center_horizontal"
-        android:text="@string/car_details_title_text"
+        android:text="Car Details Title"
         android:textSize="@dimen/actionBarTextSize" />
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/car_make_input_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,13 +25,13 @@
             android:id="@+id/car_make_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/car_make_hint"
+            android:hint="car make hint"
             android:inputType="text"
             android:maxLength="20" />
 
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/car_model_input_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,11 +44,11 @@
             android:id="@+id/car_model_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/car_model_hint"
+            android:hint="car model hint"
             android:inputType="text"
             android:maxLength="20" />
 
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
         android:id="@+id/car_year_input_layout"
@@ -62,7 +62,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/car_year_label"
+            android:text="car year label"
             android:textSize="@dimen/spinner_text_size" />
 
         <Spinner
@@ -72,7 +72,7 @@
             android:layout_marginLeft="@dimen/defaultMarginSmall" />
     </LinearLayout>
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/car_engine_input_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -85,13 +85,13 @@
             android:id="@+id/car_engine_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/car_engine_hint"
+            android:hint="car engine hint"
             android:inputType="text"
             android:maxLength="20" />
 
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/car_vin_input_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -104,17 +104,18 @@
             android:id="@+id/car_vin_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/car_vin_hint"
+            android:hint="Car info hints"
             android:inputType="text"
             android:maxLength="17" />
 
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/submit_car"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:text="Save Details"
         android:layout_margin="@dimen/defaultMarginSmall" />
 
 

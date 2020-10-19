@@ -118,7 +118,7 @@ public class AppointmentFragment extends Fragment {
     @OnClick(R.id.submit_service_request)
     void onSubmitRequestClicked() {
         if (markedCheckboxes.isEmpty()) {
-            Toast.makeText(getActivity().getApplicationContext(), R.string.no_service_checked_error, Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity().getApplicationContext(), "no_service_checked_error, Try Again", Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -157,7 +157,7 @@ public class AppointmentFragment extends Fragment {
         firestoreDB.collection(DBConstants.DB_SCHEDULE_COLLECTION).document(timeSlot.getUid()).set(data, SetOptions.merge()).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
-                Toast.makeText(getActivity().getApplicationContext(), getString(R.string.request_success_text), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity().getApplicationContext(), "request_success", Toast.LENGTH_SHORT).show();
                 getActivity().onBackPressed();
             }
         }).addOnFailureListener(new OnFailureListener() {
@@ -206,6 +206,6 @@ public class AppointmentFragment extends Fragment {
     }
 
     private void showErrorMessage() {
-        Toast.makeText(getActivity(), R.string.crash_error_text, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getActivity(), "crash_error_text", Toast.LENGTH_SHORT).show();
     }
 }

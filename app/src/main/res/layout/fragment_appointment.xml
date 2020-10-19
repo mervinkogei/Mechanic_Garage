@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/defaultMarginSmall"
         android:gravity="center_horizontal"
-        android:text="@string/garage_appointment_title_text"
+        android:text="Garage appointment title"
         android:textSize="@dimen/spinner_text_size" />
 
     <RelativeLayout
@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:gravity="left"
-            android:text="@string/service_type_text"
+            android:text="service type"
             android:textSize="@dimen/actionBarTextSize" />
 
         <LinearLayout
@@ -43,19 +43,19 @@
                 android:id="@+id/required_service_small"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/required_service_small_text" />
+                android:text="required service small" />
 
             <CheckBox
                 android:id="@+id/required_service_big"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/required_service_big_text" />
+                android:text="required service big" />
 
             <CheckBox
                 android:id="@+id/required_service_tyres"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/required_service_tyres_text" />
+                android:text="required service tyres" />
 
         </LinearLayout>
 
@@ -73,20 +73,20 @@
                 android:id="@+id/required_service_brakes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/required_service_brakes_text" />
+                android:text="required service brakes" />
 
 
             <CheckBox
                 android:id="@+id/required_service_diagnostics"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/required_service_diagnostics_text" />
+                android:text="required service diagnostics" />
 
             <CheckBox
                 android:id="@+id/required_service_other"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/required_service_other_text" />
+                android:text="required service other" />
 
         </LinearLayout>
 
@@ -101,7 +101,7 @@
         android:layout_marginLeft="@dimen/defaultMarginSmall"
         android:layout_marginRight="@dimen/defaultMarginSmall"
         android:layout_marginTop="@dimen/defaultMarginSmall"
-        android:hint="@string/extra_note_input_hint"
+        android:hint="extra note input"
         android:lines="4" />
 
     <Spinner
@@ -119,6 +119,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="@dimen/defaultMarginSmall"
-        android:text="@string/submit_service_request_text" />
+        android:text="submit service request" />
 
 </RelativeLayout>

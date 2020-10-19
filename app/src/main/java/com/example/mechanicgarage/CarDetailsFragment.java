@@ -127,9 +127,9 @@ public class CarDetailsFragment extends Fragment {
                 userData = documentSnapshot.toObject(User.class);
                 if (userData.getCar() != null) {
                     updateUiWithCar(userData.getCar());
-                    carSubmit.setText(R.string.update_car_text);
+                    carSubmit.setText("update_car");
                 } else {
-                    carSubmit.setText(R.string.set_car_text);
+                    carSubmit.setText("set_car");
                 }
             }
         });
@@ -147,11 +147,11 @@ public class CarDetailsFragment extends Fragment {
         if (userData != null) {
             userData.setCar(carToSave);
             firestoreDB.collection(DBConstants.DB_USERS_COLLECTION).document(userData.getUid()).set(userData, SetOptions.merge());
-            Toast.makeText(getActivity().getApplicationContext(), "Auto je spremljen", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity().getApplicationContext(), "Car Details saved successfully", Toast.LENGTH_SHORT).show();
 
             onCarSaved();
         } else {
-            Toast.makeText(getActivity().getApplicationContext(), getString(R.string.crash_error_text), Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity().getApplicationContext(), "Car Details not captured", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -171,23 +171,23 @@ public class CarDetailsFragment extends Fragment {
 
         if (carMake.isEmpty()) {
             error = true;
-            carMakeInput.setError(getString(R.string.empty_input_field_error));
+            carMakeInput.setError("empty_input_field_error");
         }
         if (carModel.isEmpty()) {
             error = true;
-            carModelInput.setError(getString(R.string.empty_input_field_error));
+            carModelInput.setError("empty_input_field_error");
         }
         if (carEngine.isEmpty()) {
             error = true;
-            carEngineInput.setError(getString(R.string.empty_input_field_error));
+            carEngineInput.setError("empty_input_field_error");
         }
         if (carVIN.isEmpty()) {
             error = true;
-            carVinInput.setError(getString(R.string.empty_input_field_error));
+            carVinInput.setError("empty_input_field_error");
         }
         if (carVIN.length() < 17) {
             error = true;
-            carVinInput.setError(getString(R.string.wrong_VIN_error));
+            carVinInput.setError("wrong_info_error");
         }
 
         return !error;

@@ -13,6 +13,6 @@
         android:text="Ngara Garage"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="@dimen/actionBarTextSize"
-        tools:text="Naslov" />
+        tools:text="Ngara Autogarage" />
 
 </LinearLayout>

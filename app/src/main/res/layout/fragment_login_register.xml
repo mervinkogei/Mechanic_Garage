@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/defaultMarginSmall">
@@ -17,11 +17,11 @@
             android:layout_marginLeft="@dimen/defaultMarginSmall"
             android:layout_marginRight="@dimen/defaultMarginSmall"
             android:layout_marginTop="@dimen/defaultMarginSmall"
-            android:hint="@string/email_input_hint"
+            android:hint="Enter Email"
             android:inputType="textEmailAddress" />
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -32,9 +32,9 @@
             android:layout_marginLeft="@dimen/defaultMarginSmall"
             android:layout_marginRight="@dimen/defaultMarginSmall"
             android:layout_marginTop="@dimen/defaultMarginSmall"
-            android:hint="@string/password_input_hint"
+            android:hint="Enter Password"
             android:inputType="textPassword" />
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
 
     <EditText
@@ -44,7 +44,7 @@
         android:layout_marginLeft="@dimen/defaultMarginSmall"
         android:layout_marginRight="@dimen/defaultMarginSmall"
         android:layout_marginTop="@dimen/defaultMarginSmall"
-        android:hint="@string/password_reinput_hint"
+        android:hint="Confirm Password"
         android:inputType="textPassword"
         android:visibility="gone" />
 
@@ -55,7 +55,7 @@
         android:layout_marginLeft="@dimen/defaultMarginSmall"
         android:layout_marginRight="@dimen/defaultMarginSmall"
         android:layout_marginTop="@dimen/defaultMarginSmall"
-        android:hint="@string/name_input_hint"
+        android:hint="Enter Name"
         android:inputType="textPersonName"
         android:visibility="gone" />
 
@@ -66,7 +66,7 @@
         android:layout_marginLeft="@dimen/defaultMarginSmall"
         android:layout_marginRight="@dimen/defaultMarginSmall"
         android:layout_marginTop="@dimen/defaultMarginSmall"
-        android:hint="@string/phone_input_hint"
+        android:hint="Enter Phone no"
         android:inputType="phone"
         android:visibility="gone" />
 
@@ -78,13 +78,13 @@
         android:layout_marginLeft="@dimen/defaultMarginSmall"
         android:layout_marginRight="@dimen/defaultMarginSmall"
         android:layout_marginTop="@dimen/defaultMarginSmall"
-        android:text="@string/login_submit_text" />
+        android:text="Login" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="@string/login_between_buttons_text" />
+        android:text="or" />
 
     <Button
         android:id="@+id/toogle_register_login"
@@ -93,6 +93,6 @@
         android:layout_marginBottom="@dimen/defaultMarginSmall"
         android:layout_marginLeft="@dimen/defaultMarginSmall"
         android:layout_marginRight="@dimen/defaultMarginSmall"
-        tools:text="Toggle" />
+        tools:text="Toogle" />
 
 </LinearLayout>

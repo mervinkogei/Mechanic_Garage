@@ -109,9 +109,9 @@ public class LoginRegisterFragment extends Fragment {
             passwordReinput.setVisibility(View.VISIBLE);
             nameInput.setVisibility(View.VISIBLE);
             phoneInput.setVisibility(View.VISIBLE);
-            toggleType.setText(R.string.login_toogle_text);
+            toggleType.setText("login toogle");
         } else {
-            toggleType.setText(R.string.register_toogle_text);
+            toggleType.setText("register toogle");
         }
     }
 
@@ -142,16 +142,16 @@ public class LoginRegisterFragment extends Fragment {
         if (fragmentTypeFlag == REGISTER_FRAGMENT) {
 
             if (!password.equals(password2)) {
-                passwordReinput.setError(getString(R.string.login_password_different_error));
-                passwordInput.setError(getString(R.string.login_password_different_error));
+                passwordReinput.setError("login_password_different_error");
+                passwordInput.setError("login_password_different_error");
                 error = true;
             }
             if (name.isEmpty()) {
-                nameInput.setError(getString(R.string.login_name_error));
+                nameInput.setError("login_name_error");
                 error = true;
             }
             if (phone.isEmpty()) {
-                phoneInput.setError(getString(R.string.login_name_error));
+                phoneInput.setError("login_name_error");
                 error = true;
             }
         }
@@ -182,11 +182,11 @@ public class LoginRegisterFragment extends Fragment {
                     UserProfileChangeRequest userUpdates = new UserProfileChangeRequest.Builder().setDisplayName(userToCreate.getName()).build();
                     user.updateProfile(userUpdates);
                     saveUserToDB(user, userToCreate);
-                    Toast.makeText(getActivity().getApplicationContext(), R.string.registrarion_success_text, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity().getApplicationContext(), "registration success", Toast.LENGTH_SHORT).show();
                     onSuccessfulSingIn();
                 } else {
                     Log.w(TAG, "onComplete: failure", task.getException());
-                    Toast.makeText(getActivity().getApplicationContext(), R.string.registration_error_text, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity().getApplicationContext(), "registration error", Toast.LENGTH_SHORT).show();
                 }
             }
 
@@ -206,11 +206,11 @@ public class LoginRegisterFragment extends Fragment {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
                     Log.d(TAG, "onComplete: sign in success");
-                    Toast.makeText(getActivity().getApplicationContext(), R.string.sign_in_success_text, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity().getApplicationContext(), "Sign_in_success", Toast.LENGTH_SHORT).show();
                     onSuccessfulSingIn();
                 } else {
                     Log.w(TAG, "onComplete: sign in failed", task.getException());
-                    Toast.makeText(getActivity().getApplicationContext(), R.string.sign_in_error_text, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity().getApplicationContext(), "sign_in_error", Toast.LENGTH_SHORT).show();
                 }
             }
         });
